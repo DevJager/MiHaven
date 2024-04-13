@@ -1,3 +1,108 @@
 ---
-
+import BentoItem from "@/components/BentoItem.astro"
 ---
+<!-- Title and subtitle centered above Bento Items -->
+<div class="text-center mb-12" style="padding-top: 4rem">
+    <h1 class="text-3xl md:text-5xl font-bold text-gray-800">Live your best life with MiHaven</h1>
+    <p class="text-md md:text-xl text-gray-600 mt-4">HOW CAN WE HELP YOU TODAY?</p>
+</div>
+
+<section
+        class={`
+    w-full max-w-[1400px]
+    grid lg:grid-cols-12 auto-rows-[30rem] gap-4
+    mx-auto p-6 md:p-12 lg:p-20
+  `}
+>
+    <BentoItem class="col-span-10 lg:col-span-4" title="Homes">
+        <div
+                slot="image"
+                class="background transition-scale absolute bottom-0 left-0 top-0
+        -z-10 h-full w-full bg-blue-950
+        bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+                style="background-image: url('/home.webp')"
+        >
+        </div>
+        <p slot="content"
+           class="max-w-xl text-base md:text-lg">
+            We apply innovation, sustainability & integrity to all the property developments we undertake, so each project is unique.
+            Our award-winning homes have a reputation for quality and individuality, responding beautifully to Tropical North QLD.
+        </p>
+    </BentoItem>
+    <BentoItem class="col-span-10 lg:col-span-4" title="Courses">
+        <div
+                slot="image"
+                class="background transition-scale absolute bottom-0 left-0 top-0
+        -z-10 h-full w-full bg-blue-950
+        bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+                style="background-image: url('/courses.webp')"
+        >
+        </div>
+        <p slot="content"
+           class="max-w-xl text-base md:text-lg">
+            MiHaven delivers supportive and engaging training that meets employment needs and enhances life skills.
+            We are uniquely positioned as a local company to understand the training required for you to successfully gain employment in the region.
+        </p>
+    </BentoItem>
+    <BentoItem class="col-span-10 lg:col-span-4" title="SDA Homes">
+        <div
+                slot="image"
+                class="background transition-scale absolute bottom-0 left-0 top-0
+        -z-10 h-full w-full bg-blue-950
+        bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+                style="background-image: url('/SDA.webp')"
+        >
+        </div>
+        <p slot="content"
+           class="max-w-xl text-base md:text-lg">
+            MiHaven Care builds Specialist Disability Accommodation (SDA) right here in Cairns.
+            Our SDA homes are purpose-built properties for participants who qualify under the National Disability Insurance Scheme (NDIS) with high support needs.
+        </p>
+    </BentoItem>
+    <BentoItem class="col-span-10 lg:col-span-4" title="Accommodation">
+        <div
+                slot="image"
+                class="background transition-scale absolute bottom-0 left-0 top-0
+        -z-10 h-full w-full bg-blue-950
+        bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+                style="background-image: url('/Accomodation.webp')"
+        >
+        </div>
+        <p slot="content"
+           class="max-w-xl text-base md:text-lg">
+            Our facility features 42 private ensuite bedrooms and fully appointed shared zones for cooking and relaxing.
+            Close to the Cairns CBD and Hospitals, every room is fully furnished and ready to move into. This is the future of collective living.
+        </p>
+    </BentoItem>
+    <BentoItem class="col-span-10 lg:col-span-4" title="Student Accommodation">
+        <div
+                slot="image"
+                class="background transition-scale absolute bottom-0 left-0 top-0
+        -z-10 h-full w-full bg-blue-950
+        bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+                style="background-image: url('/studentAccomodation.webp')"
+        >
+        </div>
+        <p slot="content"
+           class="max-w-xl text-base md:text-lg">
+            Study and live in paradise! Our student accommodation precinct offers purpose-built student apartments located in the Cairns CBD,
+            close to TAFE North, JCU & CQU campuses, the Hospitals and all language and business colleges in Cairns.
+        </p>
+    </BentoItem>
+    <BentoItem class="col-span-10 lg:col-span-4" title="Work with us">
+        <div
+                slot="image"
+                class="background transition-scale absolute bottom-0 left-0 top-0
+        -z-10 h-full w-full bg-blue-950
+        bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+                style="background-image: url('/MiHaven-Work-with-us.webp')"
+        >
+        </div>
+        <p slot="content"
+           class="max-w-xl text-base md:text-lg">
+            MiHaven is a social enterprise business and is B-Corp registered, specialising in property development and construction,
+            student accommodation, industry-based RTO training and SDA housing. Would you like to take the next step in your career with us?
+        </p>
+    </BentoItem>
+
+</section>
