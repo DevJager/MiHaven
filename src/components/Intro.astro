@@ -1,3 +1,55 @@
 ---
 
 ---
+
+<div class="w-full">
+    <h1 class="text">
+        It's not where you live, <br>
+        it's how you live
+    </h1>
+    <div class="overlay"></div>
+    <img class="responsive-img" alt="background" src="./TWI.webp">
+</div>
+
+
+<style>
+    .w-full {
+        width: 99vw; /* Establece el ancho al 100% del ancho de la ventana */
+        height: 98vh; /* Establece la altura al 100% de la altura de la ventana */
+        overflow: hidden; /* Oculta cualquier parte de la imagen que se extienda más allá del contenedor */
+        position: relative; /* Posicionamiento necesario para la imagen absoluta dentro */
+        display: flex; /* Asegura que el contenido se centre */
+        align-items: center; /* Centra verticalmente */
+        justify-content: center; /* Centra horizontalmente */
+    }
+
+    .responsive-img, .overlay {
+        width: 100%; /* Inicialmente establece el ancho al 100% del contenedor */
+        height: 100%; /* Inicialmente establece la altura al 100% del contenedor */
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .responsive-img {
+        object-fit: cover; /* Cubre el área del contenedor, recortando donde sea necesario */
+        object-position: center; /* Centra la imagen dentro del contenedor */
+    }
+
+    .overlay {
+        background-color: rgba(0, 0, 0, 0.5); /* Color negro con opacidad al 50% */
+        z-index: 1; /* Asegúrate de que esta capa esté sobre la imagen, pero debajo del texto */
+    }
+
+    .text {
+        position: absolute; /* Posiciona el texto de manera absoluta dentro del contenedor */
+        z-index: 2; /* Asegura que el texto esté sobre la imagen y la superposición */
+        width: 100%; /* Hace que el texto se centre horizontalmente en todo el ancho del contenedor */
+        text-align: center; /* Alinea el texto horizontalmente al centro */
+        color: white; /* Color del texto */
+        font-family: 'Futura-pt', sans-serif; /* Estilo de la fuente */
+        font-size: 4rem; /* Tamaño del texto */
+        font-weight: 400;
+        font-style: normal;
+    }
+</style>
