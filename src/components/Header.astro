@@ -1,18 +1,12 @@
 ---
-// Import your Logo component
 import Logo from "./Logo.astro"
-
-// You may want to define some variables or styles here
 ---
-<header class="fixed w-full py-4 z-10 backdrop-blur-sm top-0 px-8 lg:px-0">
-    <div class="container mx-auto flex items-center justify-between">
-        <!-- Logo link -->
-        <a href="/" class="shrink-0">
-            <Logo class="w-32 lg:w-48" />
+<header id="header-nav" class="fixed top-0 w-full px-6 py-4 z-50">
+    <div class="flex justify-between items-center w-full">
+        <a href="/" class="col-span-1">
+            <Logo class="w-12" />
         </a>
-
-        <!-- Navigation -->
-        <nav class="hidden lg:block">
+        <nav class="col-span-1 justify-self-center">
             <ul class="flex gap-4">
                 <li>HOME</li>
                 <li>ABOUT</li>
@@ -24,33 +18,5 @@ import Logo from "./Logo.astro"
                 <li>CONTACT</li>
             </ul>
         </nav>
-
-        <!-- Mobile Menu Button -->
-        <button class="lg:hidden">
-            <!-- Icon for mobile menu -->
-        </button>
     </div>
 </header>
-
-<style>
-    @media (max-width: 1024px) {
-        nav ul {
-            flex-direction: column;
-            display: none; /* Hide the menu initially */
-        }
-
-        nav ul.active {
-            display: flex; /* Show the menu when active */
-        }
-
-        header button {
-            display: block; /* Show the menu button on small screens */
-        }
-    }
-
-    @media (min-width: 1025px) {
-        header button {
-            display: none; /* Hide the menu button on large screens */
-        }
-    }
-</style>
