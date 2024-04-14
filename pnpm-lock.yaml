@@ -17,6 +17,9 @@ dependencies:
   '@fontsource-variable/onest':
     specifier: ^5.0.3
     version: 5.0.3
+  '@justinribeiro/lite-youtube':
+    specifier: ^1.5.0
+    version: 1.5.0
   astro:
     specifier: ^4.6.0
     version: 4.6.0(typescript@5.4.5)
@@ -892,6 +895,10 @@ packages:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.4.15
+
+  /@justinribeiro/lite-youtube@1.5.0:
+    resolution: {integrity: sha512-TU92RKtz9BI9PRYrVwDIUsnFadLZtqRKWl1ZOdbxb7roJDb8Dd/xURllAsLEmCg6oJNyhXlVa5RsnUc0EKd8Cw==}
+    dev: false
 
   /@nodelib/fs.scandir@2.1.5:
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
