@@ -1,0 +1,98 @@
+---
+
+import BentoItem from "./BentoItem.astro";---
+
+<section>
+    <div class="separator-bar">
+        <h2>Our vision and mission</h2>
+    </div>
+</section>
+<section
+        class={`
+   w-full max-w-[1400px]
+    grid lg:grid-cols-20 auto-rows-[20rem] gap-2
+    mx-auto p-6 md:p-12 lg:p-20
+  `}
+>
+    <BentoItem class="col-span-10 lg:col-span-4" title="We build better. We shape the future.">
+        <div
+                slot="image"
+                class="background transition-scale absolute bottom-0 left-0 top-0
+    -z-10 h-full w-full bg-blue-950
+    bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+                style="background-image: url('/mission.webp')"
+        >
+        </div>
+        <p slot="content"
+           class="w-full text-base md:text-xl"> <!-- Cambiado max-w-xl por w-full -->
+            We apply innovation, sustainability & integrity to all the property developments we undertake, so each project is unique.
+            Our award-winning homes have a reputation for quality and individuality, responding beautifully to Tropical North QLD.
+        </p>
+    </BentoItem>
+    <BentoItem class="col-span-10 lg:col-span-4" title="Our Mission">
+        <div
+                slot="image"
+                class="background transition-scale absolute bottom-0 left-0 top-0
+    -z-10 h-full w-full bg-blue-950
+    bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+                style="background-image: url('/vision.webp')"
+        >
+        </div>
+        <p slot="content"
+           class="w-full text-base md:text-xl"> <!-- Cambiado max-w-xl por w-full -->
+            We apply innovation, sustainability & integrity to all the property developments we undertake, so each project is unique.
+            Our award-winning homes have a reputation for quality and individuality, responding beautifully to Tropical North QLD.
+        </p>
+    </BentoItem>
+    <BentoItem class="col-span-10 lg:col-span-4" title="Proud to be B Corp">
+        <div
+                slot="image"
+                class="background transition-scale absolute bottom-0 left-0 top-0
+    -z-10 h-full w-full bg-blue-950
+    bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+                style="background-image: url('/proud.webp')"
+        >
+        </div>
+        <p slot="content"
+           class="w-full text-base md:text-xl"> <!-- Cambiado max-w-xl por w-full -->
+            We apply innovation, sustainability & integrity to all the property developments we undertake, so each project is unique.
+            Our award-winning homes have a reputation for quality and individuality, responding beautifully to Tropical North QLD.
+        </p>
+    </BentoItem>
+</section>
+
+<style>
+    .separator-bar {
+        background-color: #1c0d02; /* Fondo negro */
+        color: #fff; /* Texto en color blanco */
+        text-align: center; /* Alinea el texto al centro */
+        padding: 60px 0; /* Espaciado superior e inferior para la barra */
+    }
+
+    .separator-bar h2 {
+        margin: 0; /* Elimina los márgenes por defecto del h2 */
+        font-size: 48px; /* Tamaño del texto */
+        /* Puedes agregar más estilos para la tipografía como la familia de fuentes, etc. */
+    }
+    @media (max-width: 600px) {
+        .separator-bar h2 {
+            font-size: 18px; /* Reduce el tamaño del texto para pantallas pequeñas */
+        }
+    }
+
+</style>
+
+
+
+
+<script type="module">
+    import PhotoSwipeLightbox from 'photoswipe/dist/photoswipe-lightbox.esm.js';
+    const lightbox = new PhotoSwipeLightbox({
+        gallery: '#my-gallery',
+        children: 'a',
+        pswpModule: () => import('photoswipe/dist/photoswipe.esm.js')
+    });
+    lightbox.init();
+
+
+</script>
