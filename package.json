@@ -28,5 +28,10 @@
     },
   "engines": {
     "node": "18.x"
+  },
+  "functions": {
+    "api/**": {
+      "includeFiles": "node_modules/preact/**"
+    }
   }
 }
