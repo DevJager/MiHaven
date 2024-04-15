@@ -2,16 +2,16 @@
 import Header from '../components/Header.astro';
 
 interface Props {
-	title: string;
+	description: string
+	title: string
 }
+const { description, title } = Astro.props
 
-const {description, title } = Astro.props;
-const {currentLocale} = Astro
 
 ---
 
 <!doctype html>
-<html lang={currentLocale}>
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content={description} />
