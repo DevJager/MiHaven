@@ -25,5 +25,8 @@
   "devDependencies": {
     "tailwindcss-animated": "^1.0.1",
     "typescript": "^5.4.5"
+  },
+  "engines": {
+    "node": "18.x"
   }
 }
