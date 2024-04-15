@@ -1,36 +1,11 @@
 {
-  "extends": "astro/tsconfigs/strict",
-  "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "@/*": [
-        "src/*"
-      ]
-    },
-    "jsx": "react-jsx",
-    "jsxImportSource": "preact",
-    "target": "es2020",
-    "module": "esnext",
-    "lib": [
-      "dom",
-      "es2020",
-      "es2021"
-    ],
-    "rootDir": "./",
-    // Cambiado para incluir astro.config.mjs
-    "outDir": "./dist",
-    "moduleResolution": "node"
-  },
-  "include": [
-    "src/**/*",
-    // Incluye todos los archivos fuente
-    "astro.config.mjs"
-    // Incluye específicamente astro.config.mjs
-  ],
-  "exclude": [
-    "node_modules",
-    // Excluye node_modules
-    "dist"
-    // Excluye el directorio de salida
-  ]
+	"extends": "astro/tsconfigs/strict",
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"@/*": ["src/*"]
+		},
+		"jsx": "react-jsx",
+		"jsxImportSource": "preact"
+	}
 }

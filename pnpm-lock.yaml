@@ -26,17 +26,26 @@ dependencies:
   astro:
     specifier: ^4.6.0
     version: 4.6.0(typescript@5.4.5)
+  preact:
+    specifier: ^10.20.2
+    version: 10.20.2
+  preact-jsx-runtime:
+    specifier: ^1.2.0
+    version: 1.2.0(preact@10.20.2)
+  preact-render-to-string:
+    specifier: ^6.4.2
+    version: 6.4.2(preact@10.20.2)
   tailwindcss:
     specifier: ^3.4.3
     version: 3.4.3
-  typescript:
-    specifier: ^5.4.5
-    version: 5.4.5
 
 devDependencies:
   tailwindcss-animated:
     specifier: ^1.0.1
     version: 1.0.1(tailwindcss@3.4.3)
+  typescript:
+    specifier: ^5.4.5
+    version: 5.4.5
 
 packages:
 
@@ -3664,8 +3673,25 @@ packages:
       picocolors: 1.0.0
       source-map-js: 1.2.0
 
+  /preact-jsx-runtime@1.2.0(preact@10.20.2):
+    resolution: {integrity: sha512-427WYzJixkSjwV69pjmjxDBRVv80xYoOrz+D+gIqMNioO5o1LfJDS72CWkHoRgIhdIs87Tff3nWh2NtN8erXpw==}
+    peerDependencies:
+      preact: '*'
+    dependencies:
+      preact: 10.20.2
+    dev: false
+
   /preact-render-to-string@6.3.1(preact@10.20.2):
     resolution: {integrity: sha512-NQ28WrjLtWY6lKDlTxnFpKHZdpjfF+oE6V4tZ0rTrunHrtZp6Dm0oFrcJalt/5PNeqJz4j1DuZDS0Y6rCBoqDA==}
+    peerDependencies:
+      preact: '>=10'
+    dependencies:
+      preact: 10.20.2
+      pretty-format: 3.8.0
+    dev: false
+
+  /preact-render-to-string@6.4.2(preact@10.20.2):
+    resolution: {integrity: sha512-Sio5SvlyZSAXHuvnMgYzVQd67lNIuQe4uSjJ+2gfpJNC6L8zoHQR5xV7B/EjIqrAYWVyJ2eACkTCxVrIzZi6Vw==}
     peerDependencies:
       preact: '>=10'
     dependencies:
@@ -4400,7 +4426,6 @@ packages:
     resolution: {integrity: sha512-vcI4UpRgg81oIRUFwR0WSIHKt11nJ7SAVlYNIu+QpqeyXP+gpQJy/Z4+F0aGxSE4MqwjyXvW/TzgkLAx2AGHwQ==}
     engines: {node: '>=14.17'}
     hasBin: true
-    dev: false
 
   /unherit@3.0.1:
     resolution: {integrity: sha512-akOOQ/Yln8a2sgcLj4U0Jmx0R5jpIg2IUyRrWOzmEbjBtGzBdHtSeFKgoEcoH4KYIG/Pb8GQ/BwtYm0GCq1Sqg==}
